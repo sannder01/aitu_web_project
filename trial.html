@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Подготовка к первому посещению Underground Gym и учебная форма анкеты.">
+    <meta name="author" content="Anuar Maksut">
+    <title>Underground Gym - Пробная тренировка</title>
+</head>
+<body>
+    <!-- Автор: Anuar Maksut, группа SE-2537. Учебный пример подготовлен с AI. -->
+    <header>
+        <p>Underground Gym - Астана. Anuar Maksut SE-2537</p>
+        <nav aria-label="Основная навигация">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="training.html">Тренировки и цены</a></li>
+                <li><a href="trial.html" aria-current="page">Пробная тренировка</a></li>
+                <li><a href="colophon.html">О создании сайта</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Пробная тренировка</h1>
+        <p>Первое посещение помогает познакомиться с залом и задать вопросы сотрудникам. До поездки свяжитесь с клубом и уточните возможность пробной тренировки. Узнайте стоимость, свободное время и необходимость предварительной записи. Учебная анкета ниже показывает пример таких вопросов, но не создает настоящую запись и не передает данные администратору.</p>
+        <section>
+            <h2>Как подготовиться</h2>
+            <ol type="1">
+                <li>Выберите удобный филиал.</li>
+                <li>Позвоните и согласуйте посещение.</li>
+                <li>Уточните, что нужно взять с собой.</li>
+            </ol>
+            <p>Если вы раньше не посещали этот клуб, спросите о раздевалке, правилах зала и знакомстве с оборудованием. Также полезно узнать, входит ли помощь тренера в выбранное посещение. <b>Адрес проекта:</b> улица Жанибека Тархана, 17. Записывайте подтвержденные условия, чтобы не перепутать предложения разных филиалов.</p>
+            <p>Если звонить неудобно, можно написать на почту <a href="mailto:info@undergroundgym.example">info@undergroundgym.example</a> — это демонстрационный адрес для учебного проекта. <em>Отвечает клуб обычно в течение рабочего дня</em>, но перед визитом лучше <mark>всё равно перезвонить и подтвердить время</mark>. Например, можно спросить прямо: <q>подскажите, когда в зале меньше всего людей?</q> — и записать ответ администратора для себя.</p>
+            <!-- Figure и figcaption используем здесь, потому что подпись физически привязана к конкретному фото, а не к разделу целиком. -->
+            <figure>
+                <!-- ЗАМЕНИТЕ на свою реальную фотографию входа/ресепшна перед сдачей: заглушки и AI-фото запрещены правилами задания. -->
+                <img src="images/trial-entrance.jpg" alt="Вход и стойка администратора филиала на Тархана, 17" width="480" height="320">
+                <figcaption>Стойка администратора — сюда приходят на первое посещение.</figcaption>
+            </figure>
+        </section>
+        <hr>
+        <section>
+            <h2>Учебная анкета</h2>
+            <p>Используйте вымышленные данные для проверки полей. Обязательные поля отмечены звездочкой &mdash; без них браузер не даст отправить форму. После нажатия кнопки браузер проверяет заполнение. Незаполненное обязательное поле или неправильный формат почты мешает завершить проверку. Кнопка сброса возвращает начальные значения.</p>
+            <!-- ЗАМЕНИТЕ этот blockquote на настоящую цитату сотрудника или посетителя клуба с именем и датой — правила задания запрещают выдуманные цитаты. -->
+            <blockquote>
+                <p>&laquo;Текст реальной цитаты сотрудника или посетителя, записанной лично&raquo; &mdash; <cite>Имя Фамилия, должность, дата визита</cite>.</p>
+            </blockquote>
+            <p>Анкету стоит заполнять <i>заранее</i>, а не в последний момент перед выходом из дома.</p>
+            <!-- Fieldset объединяет связанные поля, поэтому назначение группы видно без оформления. -->
+            <form action="trial.html" method="get">
+                <!-- Это локальная учебная форма без сервера. Она не записывает в клуб. У полей нет name, поэтому введенные значения не добавляются в URL. -->
+                <fieldset>
+                    <legend>Контактные данные и посещение</legend>
+                    <p><label for="visitor">Имя *</label><br><input type="text" id="visitor" placeholder="Ваше имя" required></p>
+                    <p><label for="email">Электронная почта *</label><br><input type="email" id="email" placeholder="student@example.com" required></p>
+                    <p><label for="phone">Телефон *</label><br><input type="tel" id="phone" placeholder="+7 700 000 00 00" required></p>
+                    <p><label for="visits">Посещений в неделю</label><br><input type="number" id="visits" min="1" max="7" value="2"></p>
+                    <p><label for="date">Желаемая дата *</label><br><input type="date" id="date" required></p>
+                    <p><label for="branch">Филиал</label><br>
+                        <select id="branch">
+                            <option value="tarkhan">Тархана, 17</option>
+                            <option value="seifullin">Сейфуллина, 1</option>
+                            <option value="mangilik">Мангилик Ел, 19/2</option>
+                        </select>
+                    </p>
+                    <fieldset>
+                        <legend>Опыт занятий *</legend>
+                        <input type="radio" id="beginner" name="experience" value="beginner" required>
+                        <label for="beginner">Первое посещение</label>
+                        <input type="radio" id="experienced" name="experience" value="experienced">
+                        <label for="experienced">Уже занимался</label>
+                    </fieldset>
+                    <p><input type="checkbox" id="trainer"><label for="trainer">Хочу узнать о занятиях с тренером</label></p>
+                    <p><label for="question">Вопрос администратору</label><br><textarea id="question" rows="4" cols="30" placeholder="Что хотите уточнить?"></textarea></p>
+                    <!-- Div группирует две кнопки: отдельного смыслового раздела или заголовка у этой пары нет. -->
+                    <div>
+                        <button type="submit">Проверить анкету</button>
+                        <button type="reset">Очистить</button>
+                    </div>
+                </fieldset>
+            </form>
+            <p>При успешной проверке открывается эта же страница. В адрес может добавиться только выбранный вариант опыта, поскольку у radio-группы есть общее имя. Данные остальных полей не отправляются. Для настоящей записи используйте контакт клуба; подтверждения от администратора эта форма не заменяет.</p>
+            <p>Форма использует <abbr title="HyperText Markup Language">HTML</abbr>. Введенные контакты не включаются в <abbr title="Uniform Resource Locator">URL</abbr>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Астана, улица Жанибека Тархана, 17.<br><a href="tel:+77750075626">8 (775) 007 5626</a></p>
+        <p><small>&copy; 2026 Anuar Maksut. Учебный проект.</small></p>
+    </footer>
+</body>
+</html>
