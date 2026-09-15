@@ -1,50 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Устройство учебного HTML-сайта об Underground Gym.">
+    <meta name="description" content="How the educational HTML website about Underground Gym was created.">
     <meta name="author" content="Anuar Maksut">
-    <title>Underground Gym - О создании сайта</title>
+    <title>Underground Gym - About this website</title>
 </head>
 <body>
-    <!-- Автор: Anuar Maksut, Samarin Maxim группа SE-2537. Учебный пример подготовлен с AI. -->
     <header>
-        <p>Underground Gym - Астана. Anuar Maksut & Samarin Maxim, SE-2537</p>
-        <nav aria-label="Основная навигация">
+        <p>Underground Gym - Astana. Samarin Maxim Se-2537</p>
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="training.html">Тренировки и цены</a></li>
-                <li><a href="trial.html">Пробная тренировка</a></li>
-                <li><a href="colophon.html" aria-current="page">О создании сайта</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="training.html">Workouts and prices</a></li>
+                <li><a href="trial.html">Trial workout</a></li>
+                <li><a href="colophon.html" aria-current="page">About this website</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>О создании сайта</h1>
-        <p>Этот сайт состоит из обычных файлов <abbr title="HyperText Markup Language">HTML</abbr>. Мы с ануаром писали его в таком редакторе как visual studio code, сам процесс написания нам был очень интересен. Для открытия данного сайта вам не нужен отдельный сервер вы можете открыть его через папку</p>
-        <!-- Section отделяет объяснение кода от сведений об источниках. -->
+        <h1>About this website</h1>
+        <p>This website consists of ordinary <abbr title="HyperText Markup Language">HTML</abbr> files. Anuar and I wrote it in Visual Studio Code, and we found the process very interesting. You do not need a separate server to open this website; you can open it directly from its folder.</p>
         <section>
-            <h2>Как устроена страница</h2>
-            <p>Браузер читает разметку и строит <abbr title="Document Object Model">DOM</abbr> - дерево элементов. Вы увидите заголовки, абзацы, списки и поля формы, оформление остается стандартным. Например элемент <code>&lt;h1&gt;</code> обозначает основной заголовок страницы. Для сохранения файла в редакторе обычно используется <kbd>Ctrl + S</kbd>.</p>
+            <h2>How a page works</h2>
+            <p>The browser reads the markup and builds the <abbr title="Document Object Model">DOM</abbr>, a tree of elements. You will see headings, paragraphs, lists, and form fields with the browser's default styling. For example, the <code>&lt;h1&gt;</code> element represents the page's main heading. The usual keyboard shortcut for saving a file in an editor is <kbd>Ctrl + S</kbd>.</p>
             <pre><code>&lt;main&gt;
-    &lt;h1&gt;Тренировки&lt;/h1&gt;
-    &lt;p&gt;Информация о зале.&lt;/p&gt;
+    &lt;h1&gt;Workouts&lt;/h1&gt;
+    &lt;p&gt;Information about the gym.&lt;/p&gt;
 &lt;/main&gt;</code></pre>
-            <p>Сообщение редактора может выглядеть так: <samp>Файл сохранен</samp>. Это пример сообщения, а не результат проверки данного сайта. <i>Colophon</i> - раздел со сведениями о создании работы.</p>
+            <p>An editor message might look like this: <samp>File saved</samp>. This is an example message, not the result of checking this website. A <i>colophon</i> is a section containing information about how a work was created.</p>
         </section>
         <hr>
         <section>
-            <h2>Источники и форма</h2>
-            <p>Название, адреса и условия предложений взяты из открытых источников. Основной источник - <cite>официальный сайт Underground Gym</cite>. Название ссылки <q>Пробная тренировка</q> указывает на учебную анкету. Она проверяет обязательные поля, но не записывает посетителя в клуб. После проверки браузер открывает файл формы повторно.</p>
+            <h2>Sources and form</h2>
+            <p>The name, addresses, and offer conditions come from public sources. The main source is the <cite>official Underground Gym website</cite>. The link text <q>Trial workout</q> refers to a practice questionnaire. It checks required fields but does not book a visitor into the club. After validation, the browser opens the form file again.</p>
             <p></p>
-            <!-- Span выделяет часть строки с языковой пометкой; отдельного смыслового HTML-элемента для названия группы нет. -->
-            <p>Автор: Samarin Maxim. Группа: <span lang="en">SE-2537</span>.</p>
+            <p>Author: Samarin Maxim. Group: <span lang="en">SE-2537</span>.</p>
         </section>
     </main>
     <footer>
-        <p>Астана, улица Жанибека Тархана, 17.<br><a href="tel:+77750075626">8 (775) 007 5626</a></p>
-        <p><small>&copy; 2026 Samarin Maxim Учебный проект.</small></p>
+        <p>17 Zhanibek Tarkhan Street, Astana.<br><a href="tel:+77750075626">8 (775) 007 5626</a></p>
+        <p><small>&copy; 2026 Samarin Maxim. Educational project.</small></p>
     </footer>
+    <div aria-label="Gym photos">
+        <p><img src="images/photo_2026-09-15_16-47-07.jpg" alt="A person holding a barbell while lying on a gym bench" width="360" style="max-width: 100%; height: auto;" loading="lazy"></p>
+        <p><img src="images/photo_2026-09-15_16-47-04.jpg" alt="Gym equipment and boxes in a storage area" width="360" style="max-width: 100%; height: auto;" loading="lazy"></p>
+        <p><img src="images/photo_2026-09-15_16-47-00.jpg" alt="A wristband numbered 161 held in front of a gym locker" width="360" style="max-width: 100%; height: auto;" loading="lazy"></p>
+    </div>
 </body>
 </html>
